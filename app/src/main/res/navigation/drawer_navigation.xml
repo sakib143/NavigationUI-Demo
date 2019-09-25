@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.navigation_demo.Fragment.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.navigation_demo.Fragment.GalleryFragment"
+        android:label="Gallery Fragment"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.navigation_demo.Fragment.SendFragment"
+        android:label="Send Fragment"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.navigation_demo.Fragment.ShareFragment"
+        android:label="Share Fragment"
+        tools:layout="@layout/fragment_share">
+        <action
+            android:id="@+id/action_nav_share_to_nav_details"
+            app:destination="@id/nav_details" />
+        />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.navigation_demo.Fragment.SlideShowFragment"
+        android:label="Slide Show Fragment"
+        tools:layout="@layout/fragment_slide_show" />
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.navigation_demo.Fragment.ToolsFragment"
+        android:label="Tools Fragment"
+        tools:layout="@layout/fragment_tools" />
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.example.navigation_demo.Fragment.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+
+<!--    nav_details is NOT TOP LEVEL fragment becasue it is not added in menu file and will be redirect from nav_share fragment-->
+
+</navigation>
