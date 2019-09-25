@@ -3,7 +3,9 @@ package com.example.navigation_demo.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
@@ -40,6 +42,12 @@ class NavigationDrawerActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfig)
         nav_view.setupWithNavController(navController)
 
+        //For log out button related stuff
+        nav_view.menu.findItem(R.id.nav_logout).setOnMenuItemClickListener {
+            Log.e("=>"," You clicked on logout !!! ")
+            drawer_layout.closeDrawer(Gravity.START)
+            true
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

@@ -46,6 +46,6 @@
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
 
-<!--    nav_details is NOT TOP LEVEL fragment becasue it is not added in menu file and will be redirect from nav_share fragment-->
+    <!--    nav_details is NOT TOP LEVEL fragment becasue it is not added in menu file and will be redirect from nav_share fragment-->
 
 </navigation>
