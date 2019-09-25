@@ -17,10 +17,11 @@
 
     <Button
         android:id="@+id/btnToTools"
-        android:text="Redirect To Tools"
+        android:text="Redirect To Details Fragment "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
+        android:textAllCaps="false"
         />
 
 </RelativeLayout>

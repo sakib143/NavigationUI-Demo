@@ -35,6 +35,13 @@
                 android:title="Send"
                 android:icon="@drawable/ic_menu_send"
                 />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Log out"
+                android:icon="@drawable/ic_menu_camera"
+                />
+
         </menu>
     </item>
 </menu>
