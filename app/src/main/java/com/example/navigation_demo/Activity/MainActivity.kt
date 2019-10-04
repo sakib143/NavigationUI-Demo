@@ -17,5 +17,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        btnBottomNavigationMA.setOnClickListener(){
+            Intent(this,BottomNavigation::class.java).also{
+                startActivity(it)
+            }
+        }
     }
 }

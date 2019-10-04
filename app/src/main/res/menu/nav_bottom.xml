@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    remove + symbol-->
+    <item
+        android:id="@id/firBottomNavFragment"
+        android:icon="@drawable/ic_casino"
+        android:title="Home"
+        />
+    <item
+        android:id="@id/secondBottmNavFragment"
+        android:title="Gallery"
+        android:icon="@drawable/ic_fitness_center"
+        />
+    <item
+        android:id="@id/thirdBottomNavFragment"
+        android:title="Slide Show"
+        android:icon="@drawable/ic_golf_course"
+        />
+</menu>
